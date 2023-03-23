@@ -112,7 +112,3 @@ def petabyteParaterabyte(valorASerConvertido):
     terabyteCalculado = valorASerConvertido * 1024
     return terabyteCalculado
 
-print('Insira o valor a ser convertido')
-entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = petabyteParaterabyte(entradaDoTecladoValorASerConvertido)
-print(valorConvertido)
