@@ -32,10 +32,10 @@ def kilobyteParabyte(valorASerConvertido):
     byteCalculado = valorASerConvertido * 1024
     return byteCalculado
 
-print('Insira o valor a ser convertido')
-entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = kilobyteParabyte(entradaDoTecladoValorASerConvertido)
-print(valorConvertido)
+# print('Insira o valor a ser convertido')
+# entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
+# valorConvertido = kilobyteParabyte(entradaDoTecladoValorASerConvertido)
+# print(valorConvertido)
 
 
 def converterStringParaFloat(value):
@@ -52,7 +52,27 @@ def megabyteParakilobyte(valorASerConvertido):
     kilobyteCalculado = valorASerConvertido * 1024
     return kilobyteCalculado
 
+# print('Insira o valor a ser convertido')
+# entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
+# valorConvertido = megabyteParakilobyte(entradaDoTecladoValorASerConvertido)
+# print(valorConvertido)
+
+
+def converterStringParaFloat(value):
+    print('Valor convertido de str para float')
+    return float(value)
+
+def megabyteParagigabyte(valorASerConvertido):
+    print('Valor convertido de megabyte para gigabyte')
+    gigabyteCalculado = valorASerConvertido / 1024
+    return gigabyteCalculado
+
+def gigabyteParamegabyte(valorASerConvertido):
+    print('Valor convertido de gigabyte para megabyte')
+    megabyteCalculado = valorASerConvertido * 1024
+    return megabyteCalculado
+
 print('Insira o valor a ser convertido')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = megabyteParakilobyte(entradaDoTecladoValorASerConvertido)
+valorConvertido = gigabyteParamegabyte(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
